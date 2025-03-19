@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportzone</title>
+    <link rel="stylesheet" href="css/main.css">
+     <link rel="icon"  href="images/icon.png.png">
+</head>
+<body>
+  <!--Heder section-->
+    <nav class="navbar">
+         <a href="#" class="logo">sportzone</a>
+         <ul id="nav-links">
+             <li><a href="Index.html">Asosiy</a></li>
+             <li><a href="Mahsulotlar.html">Mahsulotlar</a></li>
+             <li><a href="boglanish.html">Biz bilan bog‘lanish</a></li>
+             <li><a href="biz_haqimizda.html">Biz haqimizda</a></li>
+         </ul>
+         <div class="search-box">
+             <input type="text" placeholder="Qidiruv...">
+             <button>🔍</button>
+         </div>
+     </nav>
+    <!--/Heder section-->
+
+    <!--Main section-->
+    <section id="main-section"> 
+      <main>
+         <section class="hero">
+             <p>Bizning eng ommabop mahsulotlarimizni kashf qiling!</p>
+         </section>
+     
+         <section class="products">
+             <h2>Ommabop mahsulotlar</h2>
+             <div class="card">
+                <img src="images/top.jpg" alt="Futbol to‘pi">
+                <h3>Futbol to‘pi</h3>
+                <p><span>Yuqori sifatli </span>professional futbol to‘pi.</p>
+    
+                <label for="color">Rang:</label>
+                <select id="color">
+                    <option>Oq-Ko'k</option>
+                    <option>Qora-Oq</option>
+                    <option>Qizil</option>
+                </select>
+                <label for="size">Razmer:</label>
+                <select id="size">
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                </select>
+    
+                <div class="quantity-container">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <input type="text" id="quantity" value="1" readonly>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+    
+                <p class="price">Jami narx: <span id="total-price">150 000</span> so‘m</p>
+    
+                <button class="buy-btn" onclick="buyProduct()">Sotib olish</button>
+            </div>
+            <div class="card">
+                <img src="images/termiz.jpg" alt="SHeyker">
+                <h3>SHeyker</h3>
+                <p>sport uchun mikrobsiz suv saqlagich</p>
+    
+                <label for="color">Rang:</label>
+                <select id="color">
+                    <option>Oq-Ko'k</option>
+                    <option>Qora-Oq</option>
+                    <option>Qizil</option>
+                </select>
+                <label for="size">litr:</label>
+                <select id="size">
+                    <option>1</option>
+                    <option>0.7</option>
+                    <option>0.5</option>
+                </select>
+    
+                <div class="quantity-container">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <input type="text" id="quantity" value="1" readonly>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+    
+                <p class="price">Jami narx: <span id="total-price">30 000</span> so‘m</p>
+    
+                <button class="buy-btn" onclick="buyProduct()">Sotib olish</button>
+            </div>
+         </section>
+     </main>
+   </section>
+    <!--/Main section-->
+        <footer>
+        <ul>
+            <li>@telegram</li>
+            <li>@instagram</li>
+        </ul>
+        </footer>
+</body>
+</html>

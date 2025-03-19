@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    background-color: #d6d6d5;
+}
+
+header {
+    background: #f8f9fa;
+    padding: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(11, 11, 11, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+select, .quantity-container {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-container button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-container input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    width: 100%;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: darkblue;
+}
+
+/* Nav uchun */
+.top-menu {
+    background: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.top-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.top-menu ul li {
+    position: relative;
+}
+
+.top-menu ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background: white;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.top-menu ul li a:hover {
+    background: #dacccc;
+}
+
+/* Mobil qurilmalar (767px dan kichik) */
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .top-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-menu ul li a {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .buy-btn {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+/* Planshetlar (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .container {
+        gap: 15px;
+    }
+
+    .card {
+        max-width: 45%;
+    }
+
+    .top-menu ul li a {
+        font-size: 17px;
+    }
+
+    .buy-btn {
+        font-size: 17px;
+    }
+}
+
+/* Katta ekranlar (1200px dan katta) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .container {
+        gap: 25px;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+
+    .top-menu ul li a {
+        font-size: 18px;
+    }
+}

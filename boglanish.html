@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bog'lanish | Sportzone</title>
+    <link rel="stylesheet" href="css/menyu.css">
+    <link rel="stylesheet" href="css/boglanish.css">
+</head>
+<body>
+    <header>
+        <h1>Biz bilan bog'laning</h1>
+        <nav>
+            <a href="index.html">Asosiy</a>
+            <a href="Mahsulotlar.html">Mahsulotlar</a>
+            <a href="boglanish.html" class="active">Biz bilan bog‘lanish</a>
+            <a href="biz_haqimizda.html">Biz haqimizda</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Hamma fikringiz inobatga olinadi!</h2>
+        <form action="/server.php" method="get">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+    
+            <label for="haqida">Muammo yoki taklif</label>
+            <textarea name="about" id="haqida" rows="5" required></textarea>
+    
+            <button type="submit">Yuborish</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
