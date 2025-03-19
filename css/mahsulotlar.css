@@ -156,7 +156,10 @@ select, .quantity-container {
     font-weight: bold;
     border-radius: 5px;
     transition: 0.3s;
+    display: inline-block; /* Tugmalarni yonma-yon qilish */
+    white-space: nowrap; /* Matn pastga tushmasligi uchun */
 }
+
 
 .top-menu ul li a:hover {
     background: #dacccc;
